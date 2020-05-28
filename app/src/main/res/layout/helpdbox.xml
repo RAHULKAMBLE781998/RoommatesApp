@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/firelogo"/>
+
+            <TextView
+                android:id="@+id/appdescrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appicon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="Accomocation App exclusively for Students Find Accomodations and Roommates from your College "
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appdescrip"
+        android:layout_marginTop="20dp"
+        >
+    <RelativeLayout
+        android:id="@+id/roommateshelp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        >
+    <ImageView
+        android:id="@+id/studs"
+        android:layout_marginTop="5dp"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:src="@drawable/malestudent"
+    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/studs"
+            android:text="Contact those students who are looking for accomodation"
+            android:textColor="#000000" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/arrowdown"
+        android:layout_below="@+id/studs"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/roommateshelp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roommateshelp1"
+        android:layout_marginLeft="30dp"
+        >
+        <ImageView
+            android:id="@+id/grpstuds"
+            android:layout_marginTop="5dp"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:src="@drawable/studgrp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/grpstuds"
+            android:text="Group up"
+            android:textColor="#000000" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/arrowdown"
+            android:layout_below="@+id/grpstuds"/>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/roommateshelp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roommateshelp2"
+            android:layout_marginLeft="10dp"
+            >
+            <ImageView
+                android:id="@+id/house"
+                android:layout_marginTop="5dp"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:src="@drawable/house"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/house"
+                android:text="Accomodate"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

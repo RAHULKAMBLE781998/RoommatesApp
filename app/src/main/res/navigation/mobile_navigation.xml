@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.study.studyspace.ui.home.HomeFragment"
+        android:label="Ads"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_viewAddFragment"
+            app:destination="@id/nav_ViewAddFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.study.studyspace.ui.chats.MessageListFragment"
+        android:label="@string/menu_chat"
+        tools:layout="@layout/fragment_messagelist" >
+        <action
+            android:id="@+id/action_nav_chat_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_postad"
+        android:name="com.study.studyspace.ui.postad.PostAdFragment"
+        android:label="@string/menu_postad"
+        tools:layout="@layout/fragment_post_ad" />
+    <fragment
+        android:id="@+id/nav_myAds"
+        android:name="com.study.studyspace.ui.myads.MyAdsFragment"
+        android:label="@string/menu_myAds"
+        tools:layout="@layout/fragment_my_ads" >
+        <action
+            android:id="@+id/action_nav_myAds_to_nav_ViewMyAddFragment"
+            app:destination="@id/nav_ViewMyAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_ViewMyAddFragment"
+        android:name="com.study.studyspace.ui.myads.ViewMyAddFragment"
+        android:label="MyAdd"
+        tools:layout="@layout/fragment_view_myadd" />
+    <fragment
+        android:id="@+id/nav_myaccount"
+        android:name="com.study.studyspace.ui.myaccount.MyAccountFragment"
+        android:label="@string/menu_myaccount"
+        tools:layout="@layout/my_account_fragment" >
+        <action
+            android:id="@+id/action_nav_myaccount_to_getCollegeName2"
+            app:destination="@id/getCollegeName" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_roommates"
+        android:name="com.study.studyspace.ui.roommates.RoommatesFragment"
+        android:label="@string/menu_roomates"
+        tools:layout="@layout/fragment_roommates" >
+        <action
+            android:id="@+id/action_nav_roommates_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getCollegeName"
+        android:name="com.study.studyspace.CollegeNameSelector.GetCollegeName"
+        android:label="Colleges " />
+    <fragment
+        android:id="@+id/nav_ViewAddFragment"
+        android:name="com.study.studyspace.ui.home.ViewAddFragment"
+        android:label="Property"
+        tools:layout="@layout/fragment_view_add" >
+        <action
+            android:id="@+id/action_nav_ViewAddFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.study.studyspace.ui.chats.ChatFragment"
+        android:label="chats"
+        tools:layout="@layout/chat_fragment" />
+</navigation>
